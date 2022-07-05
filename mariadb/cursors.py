@@ -265,7 +265,7 @@ class Cursor(mariadb._mariadb.cursor):
 
         self._description= None
 
-        if len(data):
+        if data and len(data):
             self._data= data
         else:
             self._data= None
